@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Send to Discord Settings</title>
+  <style>
+    body { width: 300px; font-family: sans-serif; }
+    label { display: block; margin-top: 10px; }
+    input[type="text"] { width: 90%; padding: 5px; margin-bottom: 5px; }
+    button { padding: 8px 12px; background-color: #7289da; color: white; border: none; cursor: pointer; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Send to Discord Settings</h1>
+
+  <label for="webhookUrl">Webhook URL:</label>
+  <input type="text" id="webhookUrl" name="webhookUrl">
+  <div id="webhook-error" class="error"></div>
+
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username">
+  <div id="username-error" class="error"></div>
+
+
+  <button id="saveSettings">Save Settings</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
